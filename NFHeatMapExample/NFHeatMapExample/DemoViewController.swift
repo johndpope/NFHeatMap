@@ -11,17 +11,25 @@ import MapKit
 
 class DemoViewController: UIViewController{
     
-    var mapView : MKMapView?
+    var mapView : MKMapView = MKMapView()
+    var locationArray : NSArray = NSArray()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        mapView = MKMapView(frame: self.view.bounds);
-        self.view.addSubview(self.mapView!)
-        let centerLocation : NFLocationPoint = NFLocationPoint(latitude: 46.255, longitude: 20.1450)
+        mapView.frame = CGRectZero
+        mapView.setTranslatesAutoresizingMaskIntoConstraints(false)
+
+        self.view.addSubview(mapView)
         
-        var regionToShow : MKCoordinateRegion = MKCoordinateRegionMake(centerLocation.location, MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
-        mapView?.setRegion(regionToShow, animated: true)
+        var horizontalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[mapView]-0-|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["mapView" : mapView])
+        
+        var verticalConstraint = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[mapView]-0-|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["mapView" : mapView])
+        
+        self.view.addConstraints(horizontalConstraint)
+        self.view.addConstraints(verticalConstraint)
+    
+        locationArray = DemoHelper.sharedInstance.generateRandomLocationArray(50)
     }
 
     override func didReceiveMemoryWarning()

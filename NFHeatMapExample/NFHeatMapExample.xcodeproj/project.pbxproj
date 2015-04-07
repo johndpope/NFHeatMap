@@ -14,6 +14,7 @@
 		2ADD28141ACC6A2E0053DA95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADD28131ACC6A2E0053DA95 /* MapKit.framework */; };
 		2ADD28171ACDCC080053DA95 /* NFLocationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */; };
 		2ADD28181ACDCC080053DA95 /* NFLocationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */; };
+		2AE045061AD462D9003D4B75 /* DemoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE045051AD462D9003D4B75 /* DemoHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		2ADD28111ACC65EF0053DA95 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2ADD28131ACC6A2E0053DA95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFLocationPoint.swift; sourceTree = "<group>"; };
+		2AE045051AD462D9003D4B75 /* DemoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				2ADD27F11ACC65740053DA95 /* AppDelegate.swift */,
 				2ADD28111ACC65EF0053DA95 /* DemoViewController.swift */,
+				2AE045051AD462D9003D4B75 /* DemoHelper.swift */,
 				2ADD27F81ACC65740053DA95 /* Images.xcassets */,
 				2ADD27EF1ACC65740053DA95 /* Supporting Files */,
 			);
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE045061AD462D9003D4B75 /* DemoHelper.swift in Sources */,
 				2ADD27F21ACC65740053DA95 /* AppDelegate.swift in Sources */,
 				2ADD28171ACDCC080053DA95 /* NFLocationPoint.swift in Sources */,
 				2ADD28121ACC65EF0053DA95 /* DemoViewController.swift in Sources */,

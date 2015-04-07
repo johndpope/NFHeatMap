@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class NFLocationPoint: NSObject {
+class NFLocationPoint: NSObject, Printable, DebugPrintable {
     
     var location : CLLocationCoordinate2D
     var locationWeight : Double = 1.0
@@ -35,5 +35,9 @@ class NFLocationPoint: NSObject {
         location = locationCoordinate
         locationWeight = weight
     }
-   
+    
+    override var description : String
+    {
+        return NSString(format: "Latitude:%.10f Longitude:%.10f Weight: %f", location.latitude, location.longitude, locationWeight)
+    }
 }
