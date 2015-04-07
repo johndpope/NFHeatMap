@@ -16,9 +16,12 @@ class DemoViewController: UIViewController{
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.mapView = MKMapView(frame: self.view.bounds);
+        mapView = MKMapView(frame: self.view.bounds);
         self.view.addSubview(self.mapView!)
-        self.view.backgroundColor = UIColor.redColor()
+        let centerLocation : NFLocationPoint = NFLocationPoint(latitude: 46.255, longitude: 20.1450)
+        
+        var regionToShow : MKCoordinateRegion = MKCoordinateRegionMake(centerLocation.location, MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+        mapView?.setRegion(regionToShow, animated: true)
     }
 
     override func didReceiveMemoryWarning()

@@ -12,6 +12,8 @@
 		2ADD28081ACC65740053DA95 /* NFHeatMapExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28071ACC65740053DA95 /* NFHeatMapExampleTests.swift */; };
 		2ADD28121ACC65EF0053DA95 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28111ACC65EF0053DA95 /* DemoViewController.swift */; };
 		2ADD28141ACC6A2E0053DA95 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADD28131ACC6A2E0053DA95 /* MapKit.framework */; };
+		2ADD28171ACDCC080053DA95 /* NFLocationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */; };
+		2ADD28181ACDCC080053DA95 /* NFLocationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 		2ADD28071ACC65740053DA95 /* NFHeatMapExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFHeatMapExampleTests.swift; sourceTree = "<group>"; };
 		2ADD28111ACC65EF0053DA95 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2ADD28131ACC6A2E0053DA95 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFLocationPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		2ADD27E31ACC65740053DA95 = {
 			isa = PBXGroup;
 			children = (
+				2ADD28151ACDCBE20053DA95 /* NFHeatMap */,
 				2ADD27EE1ACC65740053DA95 /* NFHeatMapExample */,
 				2ADD28041ACC65740053DA95 /* NFHeatMapExampleTests */,
 				2ADD27ED1ACC65740053DA95 /* Products */,
@@ -108,6 +112,14 @@
 				2ADD28061ACC65740053DA95 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ADD28151ACDCBE20053DA95 /* NFHeatMap */ = {
+			isa = PBXGroup;
+			children = (
+				2ADD28161ACDCC080053DA95 /* NFLocationPoint.swift */,
+			);
+			name = NFHeatMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADD27F21ACC65740053DA95 /* AppDelegate.swift in Sources */,
+				2ADD28171ACDCC080053DA95 /* NFLocationPoint.swift in Sources */,
 				2ADD28121ACC65EF0053DA95 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADD28081ACC65740053DA95 /* NFHeatMapExampleTests.swift in Sources */,
+				2ADD28181ACDCC080053DA95 /* NFLocationPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +403,7 @@
 				2ADD280D1ACC65740053DA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ADD280E1ACC65740053DA95 /* Build configuration list for PBXNativeTarget "NFHeatMapExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +412,7 @@
 				2ADD28101ACC65740053DA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
