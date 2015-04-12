@@ -38,6 +38,6 @@ class NFLocationPoint: NSObject, Printable, DebugPrintable {
     
     override var description : String
     {
-        return NSString(format: "Latitude:%.10f Longitude:%.10f Weight: %f", location.latitude, location.longitude, locationWeight)
+        return NSString(format: "Latitude:%.10f Longitude:%.10f Weight: %f", location.latitude, location.longitude, locationWeight) as String
     }
 }
