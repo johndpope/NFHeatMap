@@ -10,7 +10,8 @@ import Foundation
 
 private let _demoHelper = DemoHelper()
 
-class DemoHelper {
+class DemoHelper
+{
     class var sharedInstance: DemoHelper
     {
         return _demoHelper

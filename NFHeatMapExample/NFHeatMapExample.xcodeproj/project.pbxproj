@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3C7B431B75435900FEEEDD /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C7B421B75435900FEEEDD /* MapViewDelegate.swift */; };
 		2ADD27F21ACC65740053DA95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD27F11ACC65740053DA95 /* AppDelegate.swift */; };
 		2ADD27F91ACC65740053DA95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD27F81ACC65740053DA95 /* Images.xcassets */; };
 		2ADD28081ACC65740053DA95 /* NFHeatMapExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD28071ACC65740053DA95 /* NFHeatMapExampleTests.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3C7B421B75435900FEEEDD /* MapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
 		2ADD27EC1ACC65740053DA95 /* NFHeatMapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFHeatMapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD27F01ACC65740053DA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADD27F11ACC65740053DA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				2ADD27F11ACC65740053DA95 /* AppDelegate.swift */,
 				2ADD28111ACC65EF0053DA95 /* DemoViewController.swift */,
 				2AE045051AD462D9003D4B75 /* DemoHelper.swift */,
+				2A3C7B421B75435900FEEEDD /* MapViewDelegate.swift */,
 				2ADD27F81ACC65740053DA95 /* Images.xcassets */,
 				2ADD27EF1ACC65740053DA95 /* Supporting Files */,
 			);
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AE045061AD462D9003D4B75 /* DemoHelper.swift in Sources */,
+				2A3C7B431B75435900FEEEDD /* MapViewDelegate.swift in Sources */,
 				2ADD27F21ACC65740053DA95 /* AppDelegate.swift in Sources */,
 				2ADD28171ACDCC080053DA95 /* NFLocationPoint.swift in Sources */,
 				2ADD28121ACC65EF0053DA95 /* DemoViewController.swift in Sources */,
