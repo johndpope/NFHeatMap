@@ -36,6 +36,13 @@ class NFLocationPoint: NSObject, Printable, DebugPrintable {
         locationWeight = weight
     }
     
+    func euclideanDistanceTo(locationPoint : NFLocationPoint) -> Double
+    {
+        var retVal : Double = 0.0
+        retVal = sqrt(pow((self.location.latitude - locationPoint.location.latitude), 2) + pow((self.location.longitude - locationPoint.location.longitude), 2))
+        return retVal
+    }
+    
     override var description : String
     {
         return NSString(format: "Latitude:%.10f Longitude:%.10f Weight: %f", location.latitude, location.longitude, locationWeight) as String
